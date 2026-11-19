@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Espetinhos do Rei | Solicite seu orçamento</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:Arial,Helvetica,sans-serif;background:#f6f3ee;color:#242424}
+  header{background:#171717;color:#fff;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px}
+  .brand{font-size:25px;font-weight:800;letter-spacing:.3px}
+  .brand span{color:#d39a35}
+  header a{color:#fff;text-decoration:none;border:1px solid #d39a35;padding:10px 16px;border-radius:30px}
+  .hero{padding:65px 7%;background:linear-gradient(135deg,#211b16,#3a2819);color:#fff}
+  .hero small{color:#d9aa5a;font-weight:700;text-transform:uppercase;letter-spacing:2px}
+  .hero h1{font-size:clamp(35px,6vw,65px);max-width:800px;margin:12px 0}
+  .hero p{font-size:18px;max-width:650px;line-height:1.6;color:#eee}
+  .wrap{max-width:1100px;margin:-25px auto 60px;padding:0 18px;position:relative}
+  .box{background:#fff;border-radius:22px;padding:30px;box-shadow:0 15px 45px rgba(0,0,0,.1)}
+  .section-title{font-size:28px;margin-bottom:8px}
+  .muted{color:#777;margin-bottom:25px}
+  .packages{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+  .package{border:2px solid #eee;border-radius:18px;padding:22px;cursor:pointer;transition:.2s;background:#fff}
+  .package:hover{transform:translateY(-2px);box-shadow:0 8px 25px rgba(0,0,0,.07)}
+  .package.selected{border-color:#d39a35;background:#fffaf1}
+  .tag{display:inline-block;background:#171717;color:#fff;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700}
+  .package h3{font-size:25px;margin:13px 0 4px}
+  .package .limit{color:#a36e16;font-weight:700;margin-bottom:13px}
+  ul{list-style:none;display:grid;gap:8px}
+  li:before{content:"✓";color:#b47a19;font-weight:800;margin-right:8px}
+  .form{margin-top:30px;padding-top:30px;border-top:1px solid #eee}
+  label{display:block;font-weight:700;margin:0 0 8px}
+  input,select{width:100%;padding:14px;border:1px solid #ddd;border-radius:12px;font-size:16px;background:#fff}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .summary{margin-top:22px;background:#f7f4ee;border-radius:16px;padding:20px}
+  .summary strong{color:#8d5e10}
+  .cta{display:block;width:100%;margin-top:20px;padding:17px;border:0;border-radius:14px;background:#208b4b;color:#fff;font-size:18px;font-weight:800;cursor:pointer}
+  .cta:hover{background:#176f3b}
+  footer{text-align:center;padding:35px 20px;color:#777}
+  @media(max-width:700px){.packages,.grid{grid-template-columns:1fr}.hero{padding:45px 7%}.box{padding:22px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">Espetinhos <span>do Rei</span></div>
+  <a href="#orcamento">Solicitar orçamento</a>
+</header>
+
+<section class="hero">
+  <small>Buffet de churrasco</small>
+  <h1>Seu evento merece um pacote à altura.</h1>
+  <p>Escolha o pacote ideal para o seu evento e solicite seu orçamento diretamente pelo WhatsApp.</p>
+</section>
+
+<main class="wrap" id="orcamento">
+  <div class="box">
+    <h2 class="section-title">Escolha seu pacote</h2>
+    <p class="muted">Selecione uma opção abaixo. O valor do orçamento será informado pelo WhatsApp.</p>
+
+    <div class="packages">
+      <article class="package" data-package="Bronze" data-limit="20" data-skewers="5">
+        <span class="tag">BRONZE</span>
+        <h3>Pacote Bronze</h3>
+        <div class="limit">Até 20 pessoas</div>
+        <ul>
+          <li>Até 5 tipos de espetos</li><li>Arroz branco</li><li>Arroz à grega</li>
+          <li>Farofa</li><li>Vinagrete</li><li>Maionese</li><li>Salada de folhas</li>
+          <li>Pão de alho</li><li>Queijo coalho</li><li>Descartáveis</li>
+        </ul>
+      </article>
+
+      <article class="package" data-package="Prata" data-limit="35" data-skewers="7">
+        <span class="tag">PRATA</span>
+        <h3>Pacote Prata</h3>
+        <div class="limit">Até 35 pessoas</div>
+        <ul>
+          <li>Até 7 tipos de espetos</li><li>Arroz branco</li><li>Arroz à grega</li>
+          <li>Farofa</li><li>Vinagrete</li><li>Maionese</li><li>Salada de folhas</li>
+          <li>Pão de alho</li><li>Queijo coalho</li><li>Descartáveis</li>
+        </ul>
+      </article>
+
+      <article class="package" data-package="Ouro" data-limit="50" data-skewers="8">
+        <span class="tag">OURO</span>
+        <h3>Pacote Ouro</h3>
+        <div class="limit">Até 50 pessoas</div>
+        <ul>
+          <li>Até 8 tipos de espetos</li><li>Arroz branco</li><li>Arroz à grega</li>
+          <li>Farofa</li><li>Vinagrete</li><li>Maionese</li><li>Salada de folhas</li>
+          <li>Pão de alho</li><li>Queijo coalho</li><li>Descartáveis</li>
+        </ul>
+      </article>
+
+      <article class="package" data-package="Premium" data-limit="60" data-skewers="10">
+        <span class="tag">PREMIUM</span>
+        <h3>Pacote Premium</h3>
+        <div class="limit">Até 60 pessoas</div>
+        <ul>
+          <li>Até 10 tipos de espetos ou carnes à sua preferência</li>
+          <li>Arroz branco</li><li>Arroz à grega</li><li>Farofa</li><li>Vinagrete</li>
+          <li>Maionese</li><li>Salada de folhas</li><li>Pão de alho</li>
+          <li>Queijo coalho</li><li>Descartáveis</li>
+        </ul>
+      </article>
+    </div>
+
+    <div class="form">
+      <div class="grid">
+        <div>
+          <label for="people">Quantidade de pessoas</label>
+          <input id="people" type="number" min="1" placeholder="Ex.: 30">
+        </div>
+        <div>
+          <label for="preference">Preferência</label>
+          <select id="preference">
+            <option value="">Selecione</option>
+            <option>Quero escolher meus espetos</option>
+            <option>Quero escolher minhas carnes</option>
+            <option>Ainda não decidi</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="summary">
+        <div>Pacote selecionado: <strong id="selectedPackage">Nenhum</strong></div>
+        <div id="selectionNote" style="margin-top:7px;color:#666">Selecione um pacote para continuar.</div>
+      </div>
+
+      <button class="cta" id="whatsapp">Solicitar orçamento pelo WhatsApp</button>
+    </div>
+  </div>
+</main>
+
+<footer>Espetinhos do Rei • Buffet de churrasco</footer>
+
+<script>
+const cards = document.querySelectorAll('.package');
+const selectedPackage = document.getElementById('selectedPackage');
+const selectionNote = document.getElementById('selectionNote');
+
+let chosen = null;
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    cards.forEach(c => c.classList.remove('selected'));
+    card.classList.add('selected');
+    chosen = {
+      name: card.dataset.package,
+      limit: card.dataset.limit,
+      skewers: card.dataset.skewers
+    };
+    selectedPackage.textContent = 'Pacote ' + chosen.name;
+    selectionNote.textContent = 'Até ' + chosen.limit + ' pessoas • Até ' + chosen.skewers + ' tipos de espetos.';
+  });
+});
+
+document.getElementById('whatsapp').addEventListener('click', () => {
+  if (!chosen) {
+    alert('Por favor, selecione um pacote primeiro.');
+    return;
+  }
+
+  const people = document.getElementById('people').value;
+  const preference = document.getElementById('preference').value;
+
+  let message = 'Olá, quero solicitar o meu pacote.%0A%0A';
+  message += 'Pacote: ' + encodeURIComponent('Pacote ' + chosen.name) + '%0A';
+  message += 'Quantidade de pessoas: ' + encodeURIComponent(people || 'Ainda não informada') + '%0A';
+  message += 'Preferência: ' + encodeURIComponent(preference || 'Ainda não informada');
+
+  const phone = '5511946721439';
+  window.open('https://wa.me/' + phone + '?text=' + message, '_blank');
+});
+</script>
+</body>
+</html>

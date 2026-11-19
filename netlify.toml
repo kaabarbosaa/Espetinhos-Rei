@@ -1,0 +1,10 @@
+# Static site: a single hand-written HTML page, no framework or build step.
+[build]
+  publish = "."
+  command = ""
+
+# The page is not named index.html, so serve it at the site root.
+[[redirects]]
+  from = "/"
+  to = "/espetinhos_do_rei.html"
+  status = 200
